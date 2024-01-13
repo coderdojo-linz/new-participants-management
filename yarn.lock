@@ -17287,6 +17287,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"redwood@npm:^0.0.1":
+  version: 0.0.1
+  resolution: "redwood@npm:0.0.1"
+  checksum: 7d94f7572a81eb128395227f34518dbdf7e32274d5f7f63a0fd38427ad72ddd42c929b6bc1936df66d7f83b27b33d579636ca909becdd801b75e588ff49ba24b
+  languageName: node
+  linkType: hard
+
 "reflect.getprototypeof@npm:^1.0.4":
   version: 1.0.4
   resolution: "reflect.getprototypeof@npm:1.0.4"
@@ -17762,6 +17769,7 @@ __metadata:
   dependencies:
     "@redwoodjs/auth-dbauth-setup": "npm:6.6.2"
     "@redwoodjs/core": "npm:6.6.2"
+    redwood: "npm:^0.0.1"
   languageName: unknown
   linkType: soft
 
@@ -20208,6 +20216,7 @@ __metadata:
     "@simplewebauthn/browser": "npm:^7"
     "@types/react": "npm:18.2.37"
     "@types/react-dom": "npm:18.2.15"
+    humanize-string: "npm:2.1.0"
     prop-types: "npm:15.8.1"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
