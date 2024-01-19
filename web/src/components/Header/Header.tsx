@@ -3,6 +3,14 @@ import { Link, routes } from '@redwoodjs/router'
 import { useAuth } from 'src/auth'
 const Header = () => {
   const { isAuthenticated, currentUser, logOut } = useAuth()
+  function test(user) {
+    return user.email
+  }
+  try {
+    test(currentUser)
+  } catch (e) {
+    logOut()
+  }
   return (
     <header>
       <div className="flex-between">
