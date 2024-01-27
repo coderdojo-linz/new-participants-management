@@ -16,5 +16,10 @@ from the <[official redwood.js docs](https://redwoodjs.com/docs/introduction)>
 
 ### The database
 
-There is a `api/db/schema.prisma` file. Here you can create and edit your database tables
+There is a `api/db/schema.prisma` file. Here you can create and edit your database tables.
+
 You have to `yarn rw prisma migrate dev`
+
+### SSH&Deployment
+
+You can deploy with `yarn rw deploy baremetal production`
