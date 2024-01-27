@@ -16,10 +16,11 @@ import { useAuth } from './auth'
 const Routes = () => {
   return (
     <Router useAuth={useAuth}>
+      <Route path="/logout" page={LogoutPage} name="logout" />
+      <Route path="/kiosk" page={KioskPage} name="kiosk" />
       <PrivateSet unauthenticated="home" roles="admin">
         <Route path="/admin" page={AdminPage} name="admin" />
-        <Set wrap={ScaffoldLayout} title="Users" titleTo="users" buttonLabel="New User" buttonTo="newUser">
-          <Route path="/admin/users/new" page={UserNewUserPage} name="newUser" />
+        <Set wrap={ScaffoldLayout} title="Users" titleTo="users" buttonTo="users">
           <Route path="/admin/users/{id:Int}/edit" page={UserEditUserPage} name="editUser" />
           <Route path="/admin/users/{id:Int}" page={UserUserPage} name="user" />
           <Route path="/admin/users" page={UserUsersPage} name="users" />

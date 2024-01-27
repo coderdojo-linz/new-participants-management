@@ -8,7 +8,12 @@ const AdminPage = () => {
       <Metadata title="Admin" description="Admin page" />
       <Header></Header>
       <h1>AdminPage</h1>
-      <Link to={routes.users()} className="rw-button rw-button-green">Users</Link>
+      <Link to={routes.users()} className="rw-button rw-button-green">
+        Users
+      </Link>
+      <Link to={routes.kiosk()} className="rw-button rw-button-green">
+        Kiosk mode
+      </Link>
     </>
   )
 }
