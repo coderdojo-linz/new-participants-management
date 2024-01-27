@@ -10,7 +10,7 @@ from the <[official redwood.js docs](https://redwoodjs.com/docs/introduction)>
 ### How to work with a redwood.js project
 
 - Redwood requires Node.js (=18.x) and Yarn (>=1.22.21)
-- `yarn create redwood-app my-redwood-project --typescript` to initialize a new project (remove the `--typescript` for a javascript procect)
+- `> yarn create redwood-app my-redwood-project --typescript` to initialize a new project (remove the `--typescript` for a javascript project)
 - `> yarn install` to install dependecies
 - `> yarn redwood dev` to start the dev server
 
