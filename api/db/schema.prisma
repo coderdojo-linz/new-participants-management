@@ -19,15 +19,44 @@ generator client {
 model User {
   id                  Int              @id @default(autoincrement())
   email               String           @unique
-  roles               String           @default("user")
-  badges              String           @default("[]")
-  stamps              String           @default("[]")
+  roles               Role[]
+  stamps              Stamp[]
+  userBadges          UserBadge[]
   hashedPassword      String
   salt                String
   resetToken          String?
   resetTokenExpiresAt DateTime?
   webAuthnChallenge   String?          @unique
   credentials         UserCredential[]
+}
+
+model Role {
+  id    Int    @id @default(autoincrement())
+  name  String @unique
+  users User[]
+}
+
+model Stamp {
+  id     Int      @id @default(autoincrement())
+  date   DateTime
+  type   String
+  userId Int
+  user   User     @relation(fields: [userId], references: [id])
+}
+
+model Badge {
+  id         Int         @id @default(autoincrement())
+  name       String      @unique
+  imageUrl   String
+  userBadges UserBadge[]
+}
+
+model UserBadge {
+  id      Int   @id @default(autoincrement())
+  userId  Int
+  badgeId Int
+  user    User  @relation(fields: [userId], references: [id])
+  badge   Badge @relation(fields: [badgeId], references: [id])
 }
 
 model UserCredential {

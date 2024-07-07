@@ -4,6 +4,7 @@
 .netlify
 .redwood/*
 !.redwood/README.md
+.ssh
 dev.db*
 dist
 dist-babel

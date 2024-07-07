@@ -23,7 +23,7 @@
     },
     {
       "name": "Launch Web debugger",
-      "type": "chrome",
+      "type": "msedge",
       "request": "launch",
       "url": "http://localhost:8910",
       "webRoot": "${workspaceRoot}/web/src",

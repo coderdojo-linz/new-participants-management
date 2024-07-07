@@ -14,15 +14,16 @@
 # See https://redwoodjs.com/docs/deploy/baremetal for more info
 
 [[production.servers]]
-host = "braspi.local"
+host = "files.coderdojo.net"
 username = "pi"
+privateKeyPath = './.ssh/keypairs/files_codo'
 agentForward = false
 sides = ["api","web"]
 packageManagerCommand = "yarn"
 monitorCommand = "pm2"
 path = "/var/www/participants"
 processNames = ["serve"]
-repo = "https://github.com/coderdojo-linz/new-participants-management.git"
+repo = "git@github.com:coderdojo-linz/new-participants-management.git"
 branch = "main"
 keepReleases = 5
 

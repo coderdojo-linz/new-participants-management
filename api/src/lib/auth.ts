@@ -36,7 +36,12 @@ export const getCurrentUser = async (session: Decoded) => {
 
   return await db.user.findUnique({
     where: { id: session.id },
-    select: { id: true, email: true, roles: true, badges: true, stamps: true },
+    select: {
+      id: true,
+      email: true,
+      roles: true,
+      stamps: true,
+    },
   })
 }
 
@@ -64,12 +69,14 @@ type AllowedRoles = string | string[] | undefined
  * or when no roles are provided to check against. Otherwise returns false.
  */
 export const hasRole = (roles: AllowedRoles): boolean => {
-  if (!isAuthenticated()) {
+  if (!isAuthenticated) {
     return false
   }
-
-  const currentUserRoles = context.currentUser?.roles
-
+  const currentUserRoles: string[] = []
+  context.currentUser?.roles.forEach((item) => {
+    currentUserRoles.push(item.name)
+  })
+  console.log(currentUserRoles)
   if (typeof roles === 'string') {
     if (typeof currentUserRoles === 'string') {
       // roles to check is a string, currentUser.roles is a string
@@ -91,11 +98,9 @@ export const hasRole = (roles: AllowedRoles): boolean => {
       return roles.some((allowedRole) => currentUserRoles === allowedRole)
     }
   }
-
-  // roles not found
+  //roles is undefined
   return false
 }
-
 /**
  * Use requireAuth in your services to check that a user is logged in,
  * whether or not they are assigned a role, and optionally raise an

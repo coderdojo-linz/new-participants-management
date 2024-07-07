@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400" width="400" height="400" data-date-format="longDate">
+  <style>
+</style>
+  <svg viewBox="0 0 400 400" width="380" height="380" x="10" y="10">
+<path fill="#CD4127" d="M399.174,199.592v-0.002C399.174,89.364,309.816,0,199.585,0C89.355,0,0,89.364,0,199.59v0.002H399.174z"/>
+<path fill="#7C1E16" d="M0,199.592c0.002,110.231,89.355,199.588,199.585,199.588c110.231,0,199.587-89.357,199.589-199.588H0z"/>
+<path fill="#FEF5F9" d="M199.775,380.766c-100.064,0.1-181.252-80.915-181.365-180.979C18.311,99.718,99.325,18.53,199.391,18.418  c100.065-0.099,181.271,80.915,181.368,180.98C380.863,299.468,299.84,380.659,199.775,380.766z"/>
+</svg>
+  <svg viewBox="0 0 200 200" width="308" height="308" style="font-size: 27px;font-family: Arial;font-weight: 400;" x="46" y="46">
+    <defs>
+      <path id="e8753582-a546-457e-9fca-f0807c4111dd_outer" d="M100,175c-41.4,0-75-33.6-75-75s33.6-75,75-75s75,33.6,75,75S141.4,175,100,175z" stroke-dasharray="5, 5" style="stroke: #737373;fill: none;"/>
+      <path id="e8753582-a546-457e-9fca-f0807c4111dd_inner" d="M100,10c-49.6,0-90,40.4-90,90s40.4,90,90,90s90-40.4,90-90S149.6,10,100,10z" stroke-dasharray="5, 5" style="stroke: #737373;fill: none;"/>
+    </defs>
+    <text text-anchor="middle" letter-spacing="0">
+      <textPath xlink:href="#e8753582-a546-457e-9fca-f0807c4111dd_outer" startOffset="50%">25 live CoderDojos</textPath>
+    </text>
+  </svg>
+  <image xlink:href="https://s3.us-east-1.amazonaws.com/accredible-api-templates/17087698072853954712922421955872.png" viewBox="0 0 158 30" width="158" height="30" x="121" y="321"/>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="&#x421;&#x43B;&#x43E;&#x439;_1" viewBox="0 0 80 80" width="135" height="135" x="132" y="134">
+<path fill="#86898C" d="M72.96,5.31H7.04C3.16,5.31,0,8.86,0,13.22v40.75c0,3.42,2.78,6.21,6.21,6.21h26.9v2.7h-2.47   c-4.6,0-8.34,3.74-8.34,8.34v1.14c0,1.28,1.04,2.32,2.32,2.32h30.76c1.28,0,2.32-1.03,2.32-2.32v-1.14c0-4.6-3.74-8.34-8.34-8.34   H46.7v-2.7h27.09c3.43,0,6.21-2.79,6.21-6.22V13.22C80,8.86,76.84,5.31,72.96,5.31z M52.87,70.05H27.12   c0.5-1.47,1.89-2.53,3.52-2.53h18.72C50.99,67.52,52.38,68.58,52.87,70.05z M42.06,62.88h-4.31v-2.7h4.31V62.88z M75.36,53.96   c0,0.86-0.7,1.57-1.57,1.57H6.21c-0.86,0-1.57-0.7-1.57-1.57V13.22c0-1.77,1.1-3.27,2.4-3.27h65.92c1.3,0,2.4,1.5,2.4,3.27V53.96z"/>
+	<path fill="#86898C" d="M68.59,11.27H11.52c-2.94,0-5.34,2.39-5.34,5.34v32.36c0,2.94,2.39,5.34,5.34,5.34h57.07   c2.94,0,5.34-2.39,5.34-5.34V16.61C73.93,13.67,71.54,11.27,68.59,11.27z M69.3,48.97c0,0.39-0.32,0.71-0.71,0.71H11.52   c-0.39,0-0.71-0.32-0.71-0.71V16.61c0-0.39,0.32-0.71,0.71-0.71h57.07c0.39,0,0.71,0.32,0.71,0.71V48.97z"/>
+</svg>
+  <foreignObject width="115" height="119" style="font-size: 61px;color: rgb(102, 102, 102);font-family: Arial;font-weight: 400;text-align: center;letter-spacing: 0em;line-height: 1.5;" x="142" y="145">
+    <div xmlns="http://www.w3.org/1999/xhtml">25</div>
+  </foreignObject>
+</svg>
